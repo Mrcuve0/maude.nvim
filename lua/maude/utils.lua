@@ -1,0 +1,216 @@
+local M = {}
+
+local nvim_set_hl = function(ns_id)
+    return function(name, val)
+        vim.api.nvim_set_hl(ns_id, name, val)
+    end
+end
+
+M.highlight = nvim_set_hl(0)
+
+M.gen_colors = function()
+    local colors
+    if vim.o.background == 'dark' then
+        colors = {
+            -- Done
+            blue_1 = '#7CACE8',
+            blue_2 = '#67A0E4',
+            blue_3 = '#5292E0',
+            blue_4 = '#3C84DD',
+            blue_5 = '#2677D9',
+            blue_6 = '#226BC3',
+            blue_7 = '#1F5FAD',
+
+            -- Done
+            brown_1 = '#AA9B7D',
+            brown_2 = '#A29271',
+            brown_3 = '#998864',
+            brown_4 = '#8D7C5C',
+            brown_5 = '#807153',
+
+            -- Done
+            chameleon_3 = '#8FF0A4',
+
+            -- Done
+            dark_1 = '#777770',
+            dark_2 = '#676761',
+            dark_3 = '#575752',
+            dark_4 = '#474743',
+            dark_5 = '#373734',
+            dark_6 = '#262624',
+            dark_7 = '#222220',
+
+            -- Done
+            green_1 = '#7EC699',
+            green_2 = '#6FC08E',
+            green_3 = '#5FB981',
+            green_4 = '#4FB275',
+            green_5 = '#47A26A',
+            green_6 = '#40925F',
+            green_7 = '#398255',
+
+            -- Done
+            libmaude_dark = '#1A1A18',
+            libmaude_dark_alt = '#2C2C28',
+            libmaude_popup = '#3D3D38',
+            libmaude_tree = '#4E4E48',
+
+            -- Done
+            light_1 = '#FAF9F8',
+            light_2 = '#F7F6F3',
+            light_3 = '#F4F2EE',
+            light_4 = '#EEEBE4',
+            light_5 = '#E8E4DC',
+            light_6 = '#CFC7B6',
+            light_7 = '#A99A7B',
+
+            -- Done
+            orange_1 = '#F4845F',
+            orange_2 = '#F27146',
+            orange_3 = '#F16030',
+            orange_4 = '#EF4F19',
+            orange_5 = '#E14410',
+
+            -- Done
+            purple_1 = '#C49BE8',
+            purple_2 = '#B785E3',
+            purple_3 = '#AA6EDE',
+            purple_4 = '#9D58D9',
+            purple_5 = '#8F41D4',
+
+            -- Done
+            red_1 = '#F28B82',
+            red_2 = '#EF756A',
+            red_3 = '#ED5F52',
+            red_4 = '#EA493A',
+            red_5 = '#E83322',
+
+            -- Done
+            teal_1 = '#7CE8D4',
+            teal_2 = '#52E0C6',
+            teal_3 = '#26D9B8',
+            teal_4 = '#1FAD93',
+            teal_5 = '#17826E',
+
+            -- Done (maude)
+            violet_2 = '#7D8AC7',
+            violet_3 = '#6362C8',
+            violet_4 = '#4E57BA',
+
+            -- Done
+            yellow_1 = '#E8C47C',
+            yellow_2 = '#E4BB67',
+            yellow_3 = '#E0B152',
+            yellow_4 = '#DDA73C',
+            yellow_5 = '#D99D26',
+            yellow_6 = '#C38E22',
+
+            -- Done (maude)
+            split_and_borders = '#2E2E32',
+            menu_selected = '#4A4A4D',
+        }
+    else
+        colors = {
+            -- Done
+            blue_1 = '#7CACE8',
+            blue_2 = '#67A0E4',
+            blue_3 = '#5292E0',
+            blue_4 = '#3C84DD',
+            blue_5 = '#2677D9',
+            blue_6 = '#226BC3',
+            blue_7 = '#1F5FAD',
+
+            -- Done
+            brown_1 = '#AA9B7D',
+            brown_2 = '#A29271',
+            brown_3 = '#998864',
+            brown_4 = '#8D7C5C',
+            brown_5 = '#807153',
+
+            -- Done
+            chameleon_3 = '#8FF0A4',
+
+            -- Done
+            dark_1 = '#777770',
+            dark_2 = '#676761',
+            dark_3 = '#575752',
+            dark_4 = '#474743',
+            dark_5 = '#373734',
+            dark_6 = '#262624',
+            dark_7 = '#222220',
+
+            -- Done
+            green_1 = '#7EC699',
+            green_2 = '#6FC08E',
+            green_3 = '#5FB981',
+            green_4 = '#4FB275',
+            green_5 = '#47A26A',
+            green_6 = '#40925F',
+            green_7 = '#398255',
+
+            -- Done
+            light_1 = '#FAF9F8',
+            light_2 = '#F7F6F3',
+            light_3 = '#F4F2EE',
+            light_4 = '#EEEBE4',
+            light_5 = '#E8E4DC',
+            light_6 = '#CFC7B6',
+            light_7 = '#A99A7B',
+
+            -- Done
+            orange_1 = '#F4845F',
+            orange_2 = '#F27146',
+            orange_3 = '#F16030',
+            orange_4 = '#EF4F19',
+            orange_5 = '#E14410',
+
+            -- Done
+            purple_1 = '#C49BE8',
+            purple_2 = '#B785E3',
+            purple_3 = '#AA6EDE',
+            purple_4 = '#9D58D9',
+            purple_5 = '#8F41D4',
+
+            -- Done
+            red_1 = '#F28B82',
+            red_2 = '#EF756A',
+            red_3 = '#ED5F52',
+            red_4 = '#EA493A',
+            red_5 = '#E83322',
+
+            -- Done
+            teal_1 = '#7CE8D4',
+            teal_2 = '#52E0C6',
+            teal_3 = '#26D9B8',
+            teal_4 = '#1FAD93',
+            teal_5 = '#17826E',
+
+            -- Done (maude)
+            violet_2 = '#7D8AC7',
+            violet_3 = '#6362C8',
+            violet_4 = '#4E57BA',
+
+            -- Done
+            yellow_1 = '#E8C47C',
+            yellow_2 = '#E4BB67',
+            yellow_3 = '#E0B152',
+            yellow_4 = '#DDA73C',
+            yellow_5 = '#D99D26',
+            yellow_6 = '#C38E22',
+        }
+    end
+    if vim.g.maude_darker then
+        colors.libmaude_dark = '#1A1A18'
+        colors.libmaude_dark_alt = '#2C2C28'
+        colors.libmaude_tree = '#4E4E48'
+        colors.split_and_borders = '#1e1e1e'
+    end
+
+    if vim.g.maude_transparent then
+        colors.libmaude_dark = 'none'
+    end
+
+    return colors
+end
+
+return M
