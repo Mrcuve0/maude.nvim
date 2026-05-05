@@ -29,16 +29,16 @@ M.gen_colors = function()
             brown_5 = '#807153',
 
             -- Done
-            chameleon_3 = '#8FF0A4',
+            chameleon_3 = '#F2A633',
 
             -- Done
-            dark_1 = '#777770',
-            dark_2 = '#676761',
-            dark_3 = '#575752',
-            dark_4 = '#474743',
-            dark_5 = '#373734',
-            dark_6 = '#262624',
-            dark_7 = '#222220',
+            dark_1 = '#63635D', -- comments
+            dark_2 = '#575752',
+            dark_3 = '#4A4A46', -- normal text
+            dark_4 = '#3E3E3A',
+            dark_5 = '#32322F',
+            dark_6 = '#252523',
+            dark_7 = '#191917',
 
             -- Done
             green_1 = '#7EC699',
@@ -128,16 +128,16 @@ M.gen_colors = function()
             brown_5 = '#807153',
 
             -- Done
-            chameleon_3 = '#8FF0A4',
+            chameleon_3 = '#F2A633',
 
             -- Done
-            dark_1 = '#777770',
-            dark_2 = '#676761',
-            dark_3 = '#575752',
-            dark_4 = '#474743',
-            dark_5 = '#373734',
-            dark_6 = '#262624',
-            dark_7 = '#222220',
+            dark_1 = '#63635D', -- comments
+            dark_2 = '#575752',
+            dark_3 = '#4A4A46', -- normal text
+            dark_4 = '#3E3E3A',
+            dark_5 = '#32322F',
+            dark_6 = '#252523',
+            dark_7 = '#191917',
 
             -- Done
             green_1 = '#7EC699',
