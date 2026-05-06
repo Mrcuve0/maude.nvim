@@ -56,12 +56,12 @@ M.gen_colors = function()
             libmaude_tree = '#4E4E48',
 
             -- Done
-            light_1 = '#FAF9F8',
-            light_2 = '#F7F6F3',
-            light_3 = '#F4F2EE',
-            light_4 = '#EEEBE4',
-            light_5 = '#E8E4DC',
-            light_6 = '#CFC7B6',
+            light_1 = '#F3F0EC',
+            light_2 = '#E6E2D9',
+            light_3 = '#DAD3C6',
+            light_4 = '#CEC5B3',
+            light_5 = '#C1B6A0',
+            light_6 = '#B5A88D',
             light_7 = '#A99A7B',
 
             -- Done
@@ -149,13 +149,21 @@ M.gen_colors = function()
             green_7 = '#398255',
 
             -- Done
-            light_1 = '#FAF9F8',
-            light_2 = '#F7F6F3',
-            light_3 = '#F4F2EE',
-            light_4 = '#EEEBE4',
-            light_5 = '#E8E4DC',
-            light_6 = '#CFC7B6',
+            light_1 = '#F3F0EC',
+            light_2 = '#E6E2D9',
+            light_3 = '#DAD3C6',
+            light_4 = '#CEC5B3',
+            light_5 = '#C1B6A0',
+            light_6 = '#B5A88D',
             light_7 = '#A99A7B',
+
+            -- light_1 = '#FAF9F8',
+            -- light_2 = '#F7F6F3',
+            -- light_3 = '#F4F2EE',
+            -- light_4 = '#EEEBE4',
+            -- light_5 = '#E8E4DC',
+            -- light_6 = '#CFC7B6',
+            -- light_7 = '#A99A7B',
 
             -- Done
             orange_1 = '#F4845F',

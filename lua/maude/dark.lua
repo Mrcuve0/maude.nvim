@@ -1,8 +1,6 @@
 local u = require('maude.utils')
-local colors = u.gen_colors()
-
 local hl = u.highlight
-
+local colors = u.gen_colors()
 local M = {}
 
 local set_terminal_color = function()
@@ -72,8 +70,8 @@ M.set = function()
     hl('TablineFill', { fg = colors.light_4, bg = colors.libmaude_dark_alt })
     hl('TablineSel', { fg = colors.light_4, bg = colors.libmaude_dark })
     hl('Title', { bold = true })
-    hl('Visual', { bg = colors.yellow_3 })
-    hl('VisualNOS', { bg = colors.yellow_3 })
+    hl('Visual', { bg = colors.dark_5 })
+    hl('VisualNOS', { bg = colors.dark_5 })
     hl('WarningMsg', { fg = colors.yellow_4, bold = true })
     hl('WildMenu', { fg = colors.light_4, bg = colors.blue_5 })
 
@@ -232,7 +230,7 @@ M.set = function()
     hl('@textReference', { fg = colors.red_2 })
     hl('@stringEscape', { fg = colors.orange_2, bold = true })
 
-    -- Zig 
+    -- Zig
     hl('@function.call.zig', { fg = colors.chameleon_3 })
 
     -- Typescript fix

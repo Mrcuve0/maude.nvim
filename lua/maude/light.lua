@@ -1,12 +1,5 @@
-local u = require('maude.utils')
-
-local hl = u.highlight
-
-local colors = u.gen_colors()
-
-local M = {}
-
-local set_terminal_color = function()
+local u = require('maude.utils') local hl = u.highlight local colors = u.gen_colors()
+local M = {} local set_terminal_color = function()
     vim.g.terminal_color_0 = colors.light_2
     vim.g.terminal_color_1 = colors.red_2
     vim.g.terminal_color_2 = colors.teal_5
@@ -67,8 +60,8 @@ M.set = function()
     hl('TabLineFill', { fg = colors.dark_3, bg = colors.light_4 })
     hl('TablineSel', { fg = colors.dark_3, bg = colors.light_2 })
     hl('Title', { bold = true })
-    hl('Visual', { bg = colors.yellow_1 })
-    hl('VisualNOS', { bg = colors.yellow_1 })
+    hl('Visual', { bg = colors.light_4 })
+    hl('VisualNOS', { bg = colors.light_4 })
     hl('WarningMsg', { fg = colors.yellow_4, bold = true })
     hl('WildMenu', { fg = colors.dark_3, bg = colors.blue_5 })
     hl('Comment', { fg = colors.dark_1 })
