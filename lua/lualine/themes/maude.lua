@@ -7,7 +7,7 @@ local colors = {}
 colors = u.gen_colors()
 
 
-local bg = vim.o.background == 'dark' and colors.libmaude_dark_alt or colors.light_3
+local bg = vim.o.background == 'dark' and colors.maude_dark_alt or colors.light_3
 local fg = vim.o.background == 'dark' and colors.light_2 or colors.dark_3
 
 

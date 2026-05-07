@@ -4,7 +4,7 @@ local colors = u.gen_colors()
 local M = {}
 
 local set_terminal_color = function()
-    vim.g.terminal_color_0 = colors.libmaude_dark
+    vim.g.terminal_color_0 = colors.maude_dark
     vim.g.terminal_color_1 = colors.red_2
     vim.g.terminal_color_2 = colors.green_2
     vim.g.terminal_color_3 = colors.orange_3
@@ -20,7 +20,7 @@ local set_terminal_color = function()
     vim.g.terminal_color_13 = colors.purple_1
     vim.g.terminal_color_14 = colors.teal_1
     vim.g.terminal_color_15 = colors.light_3
-    vim.g.terminal_color_background = colors.libmaude_dark
+    vim.g.terminal_color_background = colors.maude_dark
     vim.g.terminal_color_foreground = colors.light_4
 end
 
@@ -28,47 +28,47 @@ M.set = function()
     set_terminal_color()
 
     -- UI highlight
-    hl('Normal', { fg = colors.light_4, bg = colors.libmaude_dark })
-    hl('NormalFloat', { fg = colors.light_4, bg = colors.libmaude_popup })
-    hl('FloatBorder', { fg = colors.light_3, bg = colors.libmaude_popup })
-    hl('ColorColumn', { bg = colors.libmaude_dark_alt })
-    hl('Cursor', { fg = colors.libmaude_dark, bg = colors.light_5 })
-    hl('CursorLine', { bg = colors.libmaude_dark_alt })
-    hl('CursorColumn', { bg = colors.libmaude_dark_alt })
-    hl('Directory', { fg = colors.light_1, bg = colors.libmaude_dark })
-    hl('DiffAdd', { fg = colors.teal_3, bg = colors.libmaude_dark })
-    hl('DiffChange', { fg = colors.orange_3, bg = colors.libmaude_dark })
-    hl('DiffDelete', { fg = colors.red_1, bg = colors.libmaude_dark })
-    hl('DiffText', { fg = colors.violet_2, bg = colors.libmaude_dark })
-    hl('EndOfBuffer', { fg = colors.libmaude_dark, bg = colors.libmaude_dark })
-    hl('ErrorMsg', { fg = colors.red_3, bg = colors.libmaude_dark, underline = true })
-    hl('VertSplit', { fg = colors.split_and_borders, bg = colors.libmaude_dark })
+    hl('Normal', { fg = colors.light_4, bg = colors.maude_dark })
+    hl('NormalFloat', { fg = colors.light_4, bg = colors.maude_popup })
+    hl('FloatBorder', { fg = colors.light_3, bg = colors.maude_popup })
+    hl('ColorColumn', { bg = colors.maude_dark_alt })
+    hl('Cursor', { fg = colors.maude_dark, bg = colors.light_5 })
+    hl('CursorLine', { bg = colors.maude_dark_alt })
+    hl('CursorColumn', { bg = colors.maude_dark_alt })
+    hl('Directory', { fg = colors.light_1, bg = colors.maude_dark })
+    hl('DiffAdd', { fg = colors.teal_3, bg = colors.maude_dark })
+    hl('DiffChange', { fg = colors.orange_3, bg = colors.maude_dark })
+    hl('DiffDelete', { fg = colors.red_1, bg = colors.maude_dark })
+    hl('DiffText', { fg = colors.violet_2, bg = colors.maude_dark })
+    hl('EndOfBuffer', { fg = colors.maude_dark, bg = colors.maude_dark })
+    hl('ErrorMsg', { fg = colors.red_3, bg = colors.maude_dark, underline = true })
+    hl('VertSplit', { fg = colors.split_and_borders, bg = colors.maude_dark })
     hl('WinSeparator', { link = 'VertSplit' })
-    hl('Folded', { fg = colors.dark_1, bg = colors.libmaude_dark })
-    hl('FoldColumn', { fg = colors.dark_1, bg = colors.libmaude_dark })
-    hl('SignColumn', { fg = colors.dark_2, bg = colors.libmaude_dark })
+    hl('Folded', { fg = colors.dark_1, bg = colors.maude_dark })
+    hl('FoldColumn', { fg = colors.dark_1, bg = colors.maude_dark })
+    hl('SignColumn', { fg = colors.dark_2, bg = colors.maude_dark })
     hl('IncSearch', { fg = colors.dark_4, bg = colors.yellow_4 })
-    hl('LineNr', { fg = colors.dark_2, bg = colors.libmaude_dark })
+    hl('LineNr', { fg = colors.dark_2, bg = colors.maude_dark })
     hl('CursorLineNr', {
         fg = colors.light_7,
-        bg = vim.g.maude_disable_cursorline and 'NONE' or colors.libmaude_dark_alt,
+        bg = vim.g.maude_disable_cursorline and 'NONE' or colors.maude_dark_alt,
     })
     hl('MatchParen', { fg = colors.light_4, bold = true })
-    hl('ModeMsg', { fg = colors.light_4, bg = colors.libmaude_dark_alt })
-    hl('MoreMsg', { fg = colors.light_4, bg = colors.libmaude_dark_alt })
+    hl('ModeMsg', { fg = colors.light_4, bg = colors.maude_dark_alt })
+    hl('MoreMsg', { fg = colors.light_4, bg = colors.maude_dark_alt })
     hl('NonText', { fg = colors.dark_4 })
-    hl('Pmenu', { fg = colors.light_4, bg = colors.libmaude_popup })
+    hl('Pmenu', { fg = colors.light_4, bg = colors.maude_popup })
     hl('PmenuSel', { fg = colors.light_4, bg = colors.menu_selected })
     hl('PmenuSbar', { bg = colors.dark_3 })
     hl('PmenuThumb', { bg = colors.dark_1 })
-    hl('Question', { fg = colors.blue_1, bg = colors.libmaude_dark })
+    hl('Question', { fg = colors.blue_1, bg = colors.maude_dark })
     hl('Search', { fg = colors.dark_4, bg = colors.yellow_4 })
-    hl('SpecialKey', { fg = colors.dark_2, bg = colors.libmaude_dark })
-    hl('StatusLine', { fg = colors.light_4, bg = colors.libmaude_dark_alt })
-    hl('StatusLineNC', { fg = colors.light_4, bg = colors.libmaude_dark })
-    hl('Tabline', { fg = colors.light_4, bg = colors.libmaude_dark_alt })
-    hl('TablineFill', { fg = colors.light_4, bg = colors.libmaude_dark_alt })
-    hl('TablineSel', { fg = colors.light_4, bg = colors.libmaude_dark })
+    hl('SpecialKey', { fg = colors.dark_2, bg = colors.maude_dark })
+    hl('StatusLine', { fg = colors.light_4, bg = colors.maude_dark_alt })
+    hl('StatusLineNC', { fg = colors.light_4, bg = colors.maude_dark })
+    hl('Tabline', { fg = colors.light_4, bg = colors.maude_dark_alt })
+    hl('TablineFill', { fg = colors.light_4, bg = colors.maude_dark_alt })
+    hl('TablineSel', { fg = colors.light_4, bg = colors.maude_dark })
     hl('Title', { bold = true })
     hl('Visual', { bg = colors.dark_5 })
     hl('VisualNOS', { bg = colors.dark_5 })
@@ -236,7 +236,7 @@ M.set = function()
     -- Typescript fix
     hl('typescriptParens', { fg = colors.light_4, bg = 'NONE' })
     -- A custome thing to make cmp doc border invisible
-    hl('CmpNDocBorder', { fg = colors.split_and_borders, bg = colors.libmaude_dark })
+    hl('CmpNDocBorder', { fg = colors.split_and_borders, bg = colors.maude_dark })
 
     hl('htmlTag', { fg = colors.teal_2 })
     hl('htmlEndTag', { fg = colors.teal_2 })
@@ -249,12 +249,12 @@ M.set = function()
     hl('NvimTreeFolderName', { fg = colors.light_4, bold = true })
     hl('NvimTreeEmptyFolderName', { fg = colors.light_4, bold = true })
     hl('NvimTreeOpenedFolderName', { fg = colors.light_4, bold = true })
-    hl('NvimTreeVertSplit', { fg = colors.libmaude_dark, bg = colors.libmaude_dark })
-    hl('NvimTreeNormal', { bg = colors.libmaude_tree })
-    hl('NvimTreeEndOfBuffer', { fg = colors.libmaude_tree, bg = colors.libmaude_tree })
+    hl('NvimTreeVertSplit', { fg = colors.maude_dark, bg = colors.maude_dark })
+    hl('NvimTreeNormal', { bg = colors.maude_tree })
+    hl('NvimTreeEndOfBuffer', { fg = colors.maude_tree, bg = colors.maude_tree })
 
-    hl('BufferLineIndicatorSelected', { bg = colors.libmaude_dark })
-    hl('BufferLineFill', { bg = colors.libmaude_dark_alt })
+    hl('BufferLineIndicatorSelected', { bg = colors.maude_dark })
+    hl('BufferLineFill', { bg = colors.maude_dark_alt })
 
     -- Telescope nvim
     hl('TelescopePromptBorder', { fg = colors.split_and_borders })
@@ -319,9 +319,9 @@ M.set = function()
     hl('NeogitDiffDeleteHighlight', { link = 'DiffDelete' })
     hl('NeogitDiffContext', { link = 'Normal' })
     hl('NeogitDiffContextHighlight', { link = 'Normal' })
-    hl('NeogitDiffAddCursor', { fg = colors.teal_3, bg = colors.libmaude_dark_alt })
+    hl('NeogitDiffAddCursor', { fg = colors.teal_3, bg = colors.maude_dark_alt })
     hl('NeogitDiffContextCursor', { link = 'CursorLine' })
-    hl('NeogitDiffDeleteCursor', { fg = colors.red_1, bg = colors.libmaude_dark_alt })
+    hl('NeogitDiffDeleteCursor', { fg = colors.red_1, bg = colors.maude_dark_alt })
 end
 
 return M
