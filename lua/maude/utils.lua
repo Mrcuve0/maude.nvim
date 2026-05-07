@@ -50,10 +50,10 @@ M.gen_colors = function()
             green_7 = '#398255',
 
             -- Done
-            libmaude_dark = '#1A1A18',
-            libmaude_dark_alt = '#2C2C28',
-            libmaude_popup = '#3D3D38',
-            libmaude_tree = '#4E4E48',
+            maude_dark = '#1A1A18',
+            maude_dark_alt = '#2C2C28',
+            maude_popup = '#3D3D38',
+            maude_tree = '#4E4E48',
 
             -- Done
             light_1 = '#F3F0EC',
@@ -208,14 +208,14 @@ M.gen_colors = function()
         }
     end
     if vim.g.maude_darker then
-        colors.libmaude_dark = '#1A1A18'
-        colors.libmaude_dark_alt = '#2C2C28'
-        colors.libmaude_tree = '#4E4E48'
-        colors.split_and_borders = '#1e1e1e'
+        colors.maude_dark = '#131311'
+        colors.maude_dark_alt = '#2C2C28'
+        colors.maude_tree = '#4E4E48'
+        colors.split_and_borders = '#3E3E3A'
     end
 
     if vim.g.maude_transparent then
-        colors.libmaude_dark = 'none'
+        colors.maude_dark = 'none'
     end
 
     return colors
