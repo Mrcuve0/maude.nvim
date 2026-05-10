@@ -108,6 +108,7 @@ M.set = function()
     hl('SpellRare', { fg = colors.red_3, undercurl = true, sp = colors.red_3 })
     hl('SpellLocale', { fg = colors.red_3, undercurl = true, sp = colors.red_3 })
     hl('Whitespace', { fg = colors.light_5 })
+    hl('NotifyBackground', { fg = colors.dark_3, bg = colors.light_2 })
 
     --- Treesitter highlight
     hl('@error', { fg = colors.red_3 })

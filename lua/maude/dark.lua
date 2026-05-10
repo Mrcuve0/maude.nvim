@@ -74,6 +74,7 @@ M.set = function()
     hl('VisualNOS', { bg = colors.dark_5 })
     hl('WarningMsg', { fg = colors.yellow_4, bold = true })
     hl('WildMenu', { fg = colors.light_4, bg = colors.blue_5 })
+    hl('NotifyBackground', { fg = colors.light_4, bg = colors.maude_popup })
 
     -- Syntax highlight
     hl('Comment', { fg = colors.dark_2 })
