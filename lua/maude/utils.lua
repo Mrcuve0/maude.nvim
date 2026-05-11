@@ -56,7 +56,8 @@ M.gen_colors = function()
             maude_tree = '#4E4E48',
 
             -- Done
-            light_1 = '#F3F0EC',
+            light_0 = '#FFFFFF',
+            light_1 = '#FAF9F5',
             light_2 = '#E6E2D9',
             light_3 = '#DAD3C6',
             light_4 = '#CEC5B3',
@@ -149,7 +150,8 @@ M.gen_colors = function()
             green_7 = '#398255',
 
             -- Done
-            light_1 = '#F3F0EC',
+            light_0 = '#FFFFFF',
+            light_1 = '#FAF9F5',
             light_2 = '#E6E2D9',
             light_3 = '#DAD3C6',
             light_4 = '#CEC5B3',
