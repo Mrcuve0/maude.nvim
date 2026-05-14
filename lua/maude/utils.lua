@@ -29,7 +29,7 @@ M.gen_colors = function()
             brown_5 = '#807153',
 
             -- Done
-            chameleon_3 = '#F2A633',
+            chameleon_3 = '#FFA000',
 
             -- Done
             dark_1 = '#63635D', -- comments
@@ -41,13 +41,14 @@ M.gen_colors = function()
             dark_7 = '#191917',
 
             -- Done
-            green_1 = '#7EC699',
-            green_2 = '#6FC08E',
-            green_3 = '#5FB981',
-            green_4 = '#4FB275',
-            green_5 = '#47A26A',
-            green_6 = '#40925F',
-            green_7 = '#398255',
+
+            green_1 = '#B0DCC0',
+            green_2 = '#A4D7B7',
+            green_3 = '#7DC698',
+            green_4 = '#58B67A',
+            green_5 = '#429661',
+            green_6 = '#317048',
+            green_7 = '#214B30',
 
             -- Done
             maude_dark = '#1A1A18',
@@ -56,9 +57,8 @@ M.gen_colors = function()
             maude_tree = '#4E4E48',
 
             -- Done
-            light_0 = '#FFFFFF',
             light_1 = '#FAF9F5',
-            light_2 = '#E6E2D9',
+            light_2 = '#ECE9E2',
             light_3 = '#DAD3C6',
             light_4 = '#CEC5B3',
             light_5 = '#C1B6A0',
@@ -129,7 +129,7 @@ M.gen_colors = function()
             brown_5 = '#807153',
 
             -- Done
-            chameleon_3 = '#F2A633',
+            chameleon_3 = '#F39100',
 
             -- Done
             dark_1 = '#63635D', -- comments
@@ -141,31 +141,22 @@ M.gen_colors = function()
             dark_7 = '#191917',
 
             -- Done
-            green_1 = '#7EC699',
-            green_2 = '#6FC08E',
-            green_3 = '#5FB981',
-            green_4 = '#4FB275',
-            green_5 = '#47A26A',
-            green_6 = '#40925F',
-            green_7 = '#398255',
+            green_1 = '#B0DCC0',
+            green_2 = '#A4D7B7',
+            green_3 = '#7DC698',
+            green_4 = '#58B67A',
+            green_5 = '#429661',
+            green_6 = '#317048',
+            green_7 = '#214B30',
 
             -- Done
-            light_0 = '#FFFFFF',
             light_1 = '#FAF9F5',
-            light_2 = '#E6E2D9',
+            light_2 = '#ECE9E2',
             light_3 = '#DAD3C6',
             light_4 = '#CEC5B3',
             light_5 = '#C1B6A0',
             light_6 = '#B5A88D',
             light_7 = '#A99A7B',
-
-            -- light_1 = '#FAF9F8',
-            -- light_2 = '#F7F6F3',
-            -- light_3 = '#F4F2EE',
-            -- light_4 = '#EEEBE4',
-            -- light_5 = '#E8E4DC',
-            -- light_6 = '#CFC7B6',
-            -- light_7 = '#A99A7B',
 
             -- Done
             orange_1 = '#F4845F',
